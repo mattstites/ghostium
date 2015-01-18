@@ -234,6 +234,17 @@
       _disqusHandler();
     });
 
+    // MY CUSTOM JS ADDITIONS
+
+    // Custom post excerpts on home page (index.hbs)
+    // ---------------------------------------------
+    //
+    $('.post-list > .post-item > .post-item-excerpt').each(function(i, obj) {
+      if( $(this).find('.custom-excerpt').length == 1 ) {
+        $(this).children(":not(.custom-excerpt)").remove();
+      }
+    });
+
   });
 
 })(jQuery, window, document);
