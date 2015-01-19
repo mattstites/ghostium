@@ -240,8 +240,8 @@
     // ---------------------------------------------
     //
     $('.post-list > .post-item > .post-item-excerpt').each(function(i, obj) {
-      if( $(this).find('.custom-excerpt').length == 1 ) {
-        $(this).children(":not(.custom-excerpt)").remove();
+      if( $(this).find('.custom-excerpt').length === 1 ) {
+        $(this).children(':not(.custom-excerpt)').remove();
       }
     });
 
